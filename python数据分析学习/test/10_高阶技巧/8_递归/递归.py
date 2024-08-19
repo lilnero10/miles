@@ -28,7 +28,7 @@ def get_files_recuriosn_from_dir(path):
             else:
                 file_list.append(new_path)
     else:
-        print("指定的目录{path}不存在")
+        print(f"指定的目录{path}不存在")
         return []
 
     return file_list

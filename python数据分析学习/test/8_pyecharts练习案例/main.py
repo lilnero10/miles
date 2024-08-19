@@ -27,7 +27,7 @@ bar = Bar(init_opts=InitOpts(theme=ThemeType.ESSOS))
 bar.add_xaxis(list(data_dict.keys()))  #x轴
 bar.add_yaxis("销售额",list(data_dict.values()),label_opts=LabelOpts(is_show=False))  #y轴
 
-#全剧配置
+#全局配置
 bar.set_global_opts(
     title_opts=TitleOpts(title="每日销售额")
 )

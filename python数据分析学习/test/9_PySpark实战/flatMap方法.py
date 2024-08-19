@@ -1,5 +1,5 @@
 """
-faltmap算子和map算子功能相同
+flatmap算子和map算子功能相同
 多了一层解除嵌套的功能
 """
 from pyspark import SparkConf, SparkContext
