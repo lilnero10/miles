@@ -1,4 +1,5 @@
 """
+注意点：
 1.当TCP客户端程序想要和TCP服务端程序进行通信的时候必须要先建立连接
 2.TCP客户端程序一般不需要绑定端口号，因为客户端是主动发起建立连接的。
 3.TCP服务端程序必须绑定端口号，否则客户端找不到这个TCP服务端程序。
@@ -14,7 +15,7 @@ if __name__ == "__main__":
     # 1.创建服务端套接字对象
     tcp_server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     #设置端口复用
-    tcp_server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    tcp_server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, True)
     # 2.绑定IP地址和端口号，如果bind中第一个参数为空，默认本机IP地址
     tcp_server_socket.bind(('',8888))
     # 3.设置监听 128:服务端等待排队链接的最大数量
