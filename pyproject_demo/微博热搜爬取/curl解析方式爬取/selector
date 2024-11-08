@@ -1,0 +1,8 @@
+"""
+找到selector数据的共性
+"""
+#pl_top_realtimehot > table > tbody > tr:nth-child(1) > td.td-02 > a
+#pl_top_realtimehot > table > tbody > tr:nth-child(2) > td.td-02 > a
+#pl_top_realtimehot > table > tbody > tr:nth-child(3) > td.td-02 > a
+共性：
+#pl_top_realtimehot > table > tbody > tr > td.td-02 > a

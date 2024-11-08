@@ -1,0 +1,4 @@
+start_urls: 设置了爬虫开始抓取的 URL。
+parse: Scrapy 默认的解析方法，用于处理爬取的页面内容。
+BeautifulSoup: 用于解析 HTML，并提取我们需要的数据。
+yield: 生成器方法，返回抓取到的数据。
